@@ -12,4 +12,5 @@ services:
 networks:
   reverseproxy:
     external:
+      name: "reverseproxy"
 
