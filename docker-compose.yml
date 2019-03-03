@@ -10,6 +10,7 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
     networks:
       - "reverseproxy"
+    restart: always
 networks:
   reverseproxy:
     external:
