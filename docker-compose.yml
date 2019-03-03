@@ -2,7 +2,8 @@ version: '3.4'
 
 services:
   nginx-proxy:
-    image: jwilder/nginx-proxy
+    build: .
+    image: ${REGISRTY_NAME}devclub-iitd/nginx-proxy
     ports:
       - "80:80"
     volumes:
