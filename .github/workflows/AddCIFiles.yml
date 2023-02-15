@@ -63,8 +63,8 @@ jobs:
         run: |  
           curl --location --request POST 'https://listen.devclub.in/github/ci' \
           --header 'Content-Type: application/json' \
+          --header 'Authorization: Bearer ${{ secrets.ACTION_SECRET }}' \
           --data-binary '@data.json'
         
       # TO-DO
       # update deploybot endpoint
-      # add verification token in request headers
